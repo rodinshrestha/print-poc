@@ -1,0 +1,22 @@
+
+// For window screen size to desktop
+    
+@media print and (max-width: 600px)  {
+        .print-container {
+            .print-wrapper {
+                flex-wrap: wrap !important;
+      
+              .order-details-wrapper {
+                flex-grow: 1;
+                width: 100% !important;
+              }
+      
+              .shipping-details-wrapper {
+                flex-grow: 1;
+                width: 100% !important;
+              }
+            }
+          }
+    
+  }
+

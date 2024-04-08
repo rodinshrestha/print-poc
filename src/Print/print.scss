@@ -1,0 +1,39 @@
+.print-container {
+  border: 5px solid black;
+  .print-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 600px) {
+      flex-direction: column !important;
+    }
+
+    .order-details-wrapper {
+      border: 1px solid black;
+
+      @media (max-width: 600px) {
+        flex-grow: 1;
+        width: 100%;
+      }
+    }
+
+    .shipping-details-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media (max-width: 600px) {
+        flex-grow: 1;
+        width: 100%;
+      }
+
+      .shipping-details-top-wrapper {
+        border: 1px solid black;
+      }
+      .other-shipping-information {
+        border: 1px solid black;
+        min-height: 1000px;
+      }
+    }
+  }
+}
